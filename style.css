@@ -1,0 +1,186 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+main {
+  background: #687861;
+  color: white;
+  width: 100vw;
+  height: 100vw;
+}
+
+/* FORM CONTAINER */
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FORM LAYOUT */
+
+.form-layout {
+  display: flex;
+  justify-content: space-between;
+  background: #384034;
+  gap: 100px;
+  width: 1280px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.53);
+  box-shadow: 10px 10px 26px -1px rgba(0, 0, 0, 0.53);
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+  h1 {
+    padding: 100px 0 50px 0;
+  }
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.log-in {
+  display: flex;
+  padding: 0 0 50px 0;
+  a {
+    color: lightpink;
+  }
+}
+
+#mail-input,
+#age-input,
+#country-input,
+.submit-btn {
+width: 395px;
+}
+
+/* BUTTONS */
+
+.submit-btn {
+  padding: 10px;
+  background: #687861;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+}
+
+.submit-btn:hover {
+  background: lightpink;
+  transition: 0.3s ease;
+  color: #384034;
+}
+
+.submit-btn.google {
+  background: none;
+  border: 2px solid #687861;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  img {
+  width: 25px;
+  height: 25px;
+  }
+}
+
+.submit-btn.google:hover {
+  background: #687861;
+  color: lightpink;
+}
+
+.terms-conditions {
+  display: flex;
+  gap: 20px;
+  padding: 30px 0;
+  font-size: 10px;
+}
+
+.register-with {
+  font-size: 10px;
+  width: 395px;
+  padding: 30px 0;
+}
+
+/* FORM IMG */
+
+.form-img {
+  height: 800px;
+  border-radius: 20px;
+  margin: 10px 10px;
+}
