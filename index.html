@@ -8,18 +8,18 @@
     <title>First-form</title>
   </head>
   <body>
-    <main>
+    <main class="body-behavior">
       <div class="form-container">
         <div class="form-layout">
           <img class="form-img" src="assets/img/form-img.jpg" alt="" />
-          <form action="https://www.solakabuta.com" target="_blank">
+          <form id="registrationForm" action="https://www.solakabuta.com" target="_blank" method="post">
             <p class="banner-quotes">"On the road to be a succesfull developer."<br> Sola Kabuta </p>
             <h1>Create an account</h1>
             <div class="log-in">
                 <p class="">Already have an account ? <span><a href="">Log in</a></span></p>
             </div>
-            <input type="text" placeholder="Jane" />
-            <input type="text" placeholder="Doe" /> <br />
+            <input id="name" type="text" placeholder="Jane"/>
+            <input id="second-name" type="text" placeholder="Doe" /> <br />
             <input
               type="text"
               name=""
@@ -32,9 +32,9 @@
             <br />
             <div class="terms-conditions">
               <input type="checkbox" />
-              <p class="terms">I agree with the <span><a class="links" href="#">terms and contitions</a></span></p>
+              <p class="terms">I agree with the <span><a class="links" href="/pages/terms.html">terms and contitions</a></span></p>
             </div>
-            <button class="submit-btn" type="submit">Create account</button> <br>
+            <button id="submit" class="submit-btn" type="submit">Create account</button> <br>
             <p class="register-with">Or register with:</p>
             <button class="submit-btn google" type="submit"><span><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt=""></span>Google</button>
           </form>
