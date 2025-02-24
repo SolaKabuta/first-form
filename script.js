@@ -30,7 +30,7 @@
 
 
 
-// CHATGPT TEACHER
+// TEACHER
 
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Bloque la soumission par défaut
@@ -58,7 +58,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         return;
     }
 
-    // ✅ Tout est valide, on soumet le formulaire manuellement
+    // Si tout est valide, on soumet le formulaire manuellement
     this.submit();
 });
 
